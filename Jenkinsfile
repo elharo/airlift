@@ -144,8 +144,8 @@ pipeline {
                         -DkeepStagingRepositoryOnCloseRuleFailure=true \
                         -DkeepStagingRepositoryOnFailure=true \
                         -DskipTests \
-                        -DstagingProfileId=28a0d8c4350ed \
-                        -DstagingProgressTimeoutMinutes=60
+                        -Poss-release \
+                        -DstagingProgressTimeoutMinutes=10
                 '''
             }
         }
